@@ -17,14 +17,14 @@ class WelcomeScreen extends Component {
           <CustomActionButton
             style={styles.loginButton}
             title="Log in"
-            onPress={() => alert("Log in")}
+            onPress={() => this.props.navigation.navigate("HomeScreen")}
           >
             <Text style={styles.buttonText}>Log in</Text>
           </CustomActionButton>
           <CustomActionButton
             style={styles.signupButton}
             title="Sign up"
-            onPress={() => alert("Sign up")}
+            onPress={() => this.props.navigation.navigate("SignUpScreen")}
           >
             <Text style={styles.buttonText}>Sign up</Text>
           </CustomActionButton>
